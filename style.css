@@ -14,21 +14,69 @@
 }
 
 .navbar{
-  width:85%;
+  width:100%;
   margin: auto;
-  padding: 35px 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 10em;
+  background-color: rgba(252, 247, 240, 0.74);
+
 }
 
 .logo{
-  width: 120px;
-  cursor: pointer
+  width: 250px;
+  cursor: pointer;
+  
+  
 }
 
-.navbar ul li {
-  list-style: none;
+
+
+/* Dropdown button */ 
+.dropbtn{
+  background-color: #935C67;
+  color: white;
+  padding: 44px;
+  font-size: 16px;
+  border: none;
+  position:absolute;
+  margin:0;
+  
+  
+  
+
+
+  
+}
+/*Container for dropdown content*/
+.dropdown{
+  position:relative;
   display: inline-block;
-
 }
+/*Dropdown Content (Default-Hidden)*/
+.dropdown-content {
+  display:none;
+  position:absolute;
+  margin-top: 106px;
+  background-color:#935C67;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/*Links inside of the dropdown*/
+.dropdown-content a {
+  color:black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display:flex;
+  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #8d4856;}
