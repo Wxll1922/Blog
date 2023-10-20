@@ -14,10 +14,9 @@
 }
 
 .navbar{
-  width:100%;
   margin: auto;
   display: flex;
-  gap: 10em;
+  gap: 43%;
   background-color: rgba(252, 247, 240, 0.74);
 
 }
