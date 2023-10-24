@@ -1,15 +1,21 @@
+/* Imports Footer CSS*/
+@import url(/CSS/footer.css);
+/*Imports Media Queries*/
+@import url(/CSS/responsive.css);
+
 /*Banner Content*/
-*{
+ * {
     margin: 0;
     Padding: 0;
     font-family: sans-serif;
+    
 }
 
 .banner{
   width: 100%;
   height: 100%;
   background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.35),rgba(0,0,0,0.35)), url("images/911.jpg");
+    linear-gradient(rgba(0, 0, 0, 0.35),rgba(0,0,0,0.35)), url("/images/911.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -107,6 +113,7 @@
   h1 {
     padding-top: 40px;
     text-align: center;
+    color: var(--purple)
   }
   
   h3 {
@@ -145,6 +152,7 @@
   .punchline {
     font: 30px bold;
     text-align: center;
+    color: #935C67;
   }
   
   a {
@@ -154,8 +162,7 @@
   
   .wrap {
     display: flex;
-    justify-content: Center;
-    align-items: stretch;
+    justify-content: center;
     width: 100%;
     gap: 24px;
     padding: 24px;
@@ -287,113 +294,8 @@
 .author-box-container .author-info .social .fa-instagram-square {
   color: #fd1d1d;
 }
- /*Footer CSS*/ 
-footer {
-  display: grid;
-}
- .container {
-    display: grid;
-    background-color: rgba(252, 247, 240, 0.74);
-    grid-template-areas: 
-        "ll ml middle mr rr";
-  } 
-  ul {
-    display: grid;
-  }
-  .foot1 {
-    display: grid;
-    grid-row: span 1;
-    grid-column: span 1;
-  }
-  .foot2 {
-    display: grid;
-    grid-row: span 1;
-    grid-column: span 1 ;
-  }
-  .foot3 {
-    display: grid;
-    grid-row: span 1;
-    grid-column: span 1 ;
-  }
-  .copy {
-    grid-area: rr;
-  }
+
   
-  /* RESPONSIVE QUERIES */
-  
-  @media (min-width: 320px) {
-    .title-flex {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: start;
-    }
-    .user-follow-info {
-      margin-top: 6px;
-    }
-  }
-  
-  @media (min-width: 460px) {
-    .box {
-        flex-basis: calc(75% - 12px);
-    }
-    .title-flex {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: start;
-    }
-    .user-follow-info {
-      margin-top: 6px;
-    }
-  }
-  
-  @media (min-width: 640px) {
-    .box {
-      flex-basis: calc(70% - 12px);
-    }
-    .title-flex {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: start;
-    }
-    .user-follow-info {
-      margin-top: 6px;
-    }
-  }
-  
-  @media (min-width: 840px) {
-    .title-flex {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: start;
-    }
-    .user-follow-info {
-      margin-top: 6px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .box {
-      flex-basis: calc(70% - 16px);
-    }
-    .title-flex {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: start;
-    }
-    .user-follow-info {
-      margin-top: 6px;
-    }
-  }
-  
-  @media (min-width: 1100px) {
-    .box {
-      flex-basis: calc(70% - 18px);
-    }
-  }
+ 
   
   
