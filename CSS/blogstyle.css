@@ -49,11 +49,13 @@
   margin:0;
     
 }
+
 /*Container for dropdown content*/
 .dropdown{
   position:relative;
   display: inline-block;
 }
+
 /*Dropdown Content (Default-Hidden)*/
 .dropdown-content {
   display:none;

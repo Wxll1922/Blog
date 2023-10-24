@@ -5,7 +5,8 @@
         height: 100%;
     }
     .box{
-        flex-basis: calc(75%-12px);
+        flex-basis: calc(100%-12px);
+        font-size: 1.75em;
     }
     .title-flex {
       display: flex;
@@ -20,13 +21,14 @@
   
   @media (min-width: 460px) {
     .box {
-        flex-basis: calc(75% - 12px);
+        flex-basis: calc(75% - 12px);   
     }
     .title-flex {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: start;
+
     }
     .user-follow-info {
       margin-top: 6px;
