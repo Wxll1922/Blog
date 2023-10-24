@@ -98,6 +98,7 @@
     background: var(--light-bg);
     font-family: "Space Grotesk", sans-serif;
     color: var(--dark);
+    
   }
  .center {
     text-align: center;
@@ -223,6 +224,36 @@
   
   .fill-two {
     background: var(--pink);
+  }
+footer {
+  display: grid;
+}
+ .container {
+    display: grid;
+    background-color: rgba(252, 247, 240, 0.74);
+    grid-template-areas: 
+        "ll ml middle mr rr";
+  } 
+  ul {
+    display: grid;
+  }
+  .foot1 {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .foot2 {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1 ;
+  }
+  .foot3 {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1 ;
+  }
+  .copy {
+    grid-area: rr;
   }
   
   /* RESPONSIVE QUERIES */
